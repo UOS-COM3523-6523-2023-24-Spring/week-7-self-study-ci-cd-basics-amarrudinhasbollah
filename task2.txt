@@ -1,0 +1,18 @@
+Task 2:
+The test executes the function complex_function() which also relies on
+random_function which is non-deterministic (results may differ per execution)
+
+This makes it unreliable because the function random_function may produce
+different results every time it runs and the value may or may not pass the if statement
+
+To test this, we need to make the function deterministic (having a permanent result
+for every execution). Source codes should produce a solid result during execution
+for them to be valid to test.
+
+It is also would be better to transform the expected output of the test to fit a template
+rather than a rigid answer. This makes it more reliable for the system to understand
+and define the execution of codes.
+
+We could also test on the property of the output itself rather than the output for example
+the data type (i.e float/double). However, it is not encouraged because testing should be
+done on behaviours not implementation of codes
